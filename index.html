@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Calculator</h1>
+    <div class="calculator">
+      <h2>Calculator</h2>
+      <p id="result"></p>
+      <table>
+        <tr>
+          <td><button onclick="removeAll()">c</button></td>
+          <td><button onclick="remove()"><</button></td>
+          <td><button class="actButtons" onclick="addCharacter('/')">/</button></td>
+          <td><button class="actButtons" onclick="addCharacter('*')">x</button></td>
+        </tr>
+        <tr>
+          <td><button class="actButtons" onclick="addCharacter('7')">7</button></td>
+          <td><button class="actButtons" onclick="addCharacter('8')">8</button></td>
+          <td><button class="actButtons" onclick="addCharacter('9')">9</button></td>
+          <td><button class="actButtons" onclick="addCharacter('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="actButtons" onclick="addCharacter('4')">4</button></td>
+          <td><button class="actButtons" onclick="addCharacter('5')">5</button></td>
+          <td><button class="actButtons" onclick="addCharacter('6')">6</button></td>
+          <td><button class="actButtons" onclick="addCharacter('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="actButtons" onclick="addCharacter('1')">1</button></td>
+          <td><button class="actButtons" onclick="addCharacter('2')">2</button></td>
+          <td><button class="actButtons" onclick="addCharacter('3')">3</button></td>
+          <td rowspan="2"><button class=" actButtons equal" onclick="calculate()">=</button></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button class=" actButtons zero" onclick="addCharacter('0')">0</button></td>
+          <td><button class="actButtons" onclick="addCharacter('.')">.</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="calculator.js"></script>
+</body>
+</html>
